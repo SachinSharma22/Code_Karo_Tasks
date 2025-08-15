@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air bnb</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="logo">
+        <img
+          src="https://up.yimg.com/ib/th/id/OIP.6T6uJIKAAgyOgiR9FDqaXQHaEK?pid=Api&rs=1&c=1&qlt=95&w=222&h=124"
+          alt="airbnb_Logo"
+        />
+      </div>
+      <div class="pages">
+        <div class="home">
+          <img
+            src="https://up.yimg.com/ib/th/id/OIP.xR4aEMBVqQ58YhNZsu2w3wHaEu?pid=Api&rs=1&c=1&qlt=95&w=167&h=106"
+            alt="Home"
+          />
+          <a class="deco" href="#">Home</a>
+        </div>
+        <div class="experiences">
+          <img
+            src="https://up.yimg.com/ib/th/id/OIP.m_IytPt5InQ1pxH32qdZJgHaI5?pid=Api&rs=1&c=1&qlt=95&w=88&h=106"
+            alt="exper"
+          />
+          <a class="deco" href="#">Experiences</a>
+        </div>
+        <div class="services">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.li0SyKVp1lmF5Y-0HapQAQAAAA?pid=Api&P=0&h=180"
+            alt="services"
+          />
+          <a class="deco" href="#">Services</a>
+        </div>
+      </div>
+      <div class="options">
+        <ul>
+          <li>Become a Host</li>
+          <li id="logo-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-globe-icon lucide-globe"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+              <path d="M2 12h20" />
+            </svg>
+          </li>
+          <li id="logo-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu-icon lucide-menu"
+            >
+              <path d="M4 12h16" />
+              <path d="M4 18h16" />
+              <path d="M4 6h16" />
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <div class="search">
+        <div class="search-group">
+          <label for="destination">Where</label>
+          <input
+            type="text"
+            name="destination"
+            id="dest"
+            placeholder="Search destination"
+          />
+        </div>
+        <div class="line"></div>
+        <div class="search-group">
+          <label for="checkIn">Check In</label>
+          <input
+            type="date"
+            name="checkIn"
+            id="checkIn"
+            placeholder="Add dates"
+          />
+        </div>
+        <div class="line"></div>
+        <div class="search-group">
+          <label for="checkOut">Check Out</label>
+          <input
+            type="date"
+            name="checkOut"
+            id="checkOut"
+            placeholder="Add dates"
+          />
+        </div>
+        <div class="line"></div>
+        <div class="search-group">
+          <label for="who">Who</label>
+          <input type="text" name="who" id="who" placeholder="Add guest" />
+        </div>
+        <button class="search-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-search-icon lucide-search"
+          >
+            <path d="m21 21-4.34-4.34" />
+            <circle cx="11" cy="11" r="8" /></svg
+          >Search
+        </button>
+      </div>
+    </div>
+
+    <!-- Location Lucknow Cards -->
+    <div class="lucknow">
+      <div class="ca">
+        Popular Homes in Lucknow<svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-chevron-right-icon lucide-chevron-right"
+        >
+          <path d="m9 18 6-6-6-6" />
+        </svg>
+      </div>
+      <div class="cards-container scroll-x">
+        <div class="card">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.jSNJmQcY_C1wr7NQvqw6mwHaEL?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Lucknow</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.Oy4ocOV8j3nJwZ3Kxi9uvwHaE7?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Lucknow</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.zzjeSsd7ixqfAeWJDUAw5wHaEJ?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Lucknow</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.8866vsp3UvIreMtxAwUAegHaEK?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Lucknow</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.-fIw982Zi2YjyNT20FnxrAHaEK?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Lucknow</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.tCtwdvArf7aDe-fTya_obgHaEi?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Lucknow</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.eTArYV1cGRSIoMionOj7KwHaE8?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Lucknow</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.zzjeSsd7ixqfAeWJDUAw5wHaEJ?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Lucknow</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.anjIiToUiq7bDKVdWvbaYwHaFs?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Lucknow</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.fuhp8KCgTBoDCF8kJZzO6wHaE8?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Lucknow</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- available in Varanshi this weekend -->
+    <div class="lucknow">
+      <div class="ca">
+        Available in Varansi this weekend<svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-chevron-right-icon lucide-chevron-right"
+        >
+          <path d="m9 18 6-6-6-6" />
+        </svg>
+      </div>
+      <div class="cards-container scroll-x">
+        <div class="card">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.jSNJmQcY_C1wr7NQvqw6mwHaEL?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Varanshi</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.Oy4ocOV8j3nJwZ3Kxi9uvwHaE7?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Varanshi</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.fuhp8KCgTBoDCF8kJZzO6wHaE8?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Varanshi</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.zzjeSsd7ixqfAeWJDUAw5wHaEJ?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Varanshi</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.fuhp8KCgTBoDCF8kJZzO6wHaE8?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Varanshi</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.HtPC-TmiHedfo2ZKuDYTwgHaE6?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Varanshi</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.MA2KvFKrCpSr7C-B6JPoRwHaE8?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Varanshi</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.Oy4ocOV8j3nJwZ3Kxi9uvwHaE7?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Varanshi</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.anjIiToUiq7bDKVdWvbaYwHaFs?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Varanshi</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.5plqVVIKA8u_I9z7hRWChwHaEK?pid=Api&P=0&h=180"
+            alt="img1"
+          />
+          <p class="title">Apartement in Varanshi</p>
+          <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+        </div>
+      </div>
+      <!-- Delhi Apartement -->
+      <div class="lucknow">
+        <div class="ca">
+          Stay in Delhi<svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-chevron-right-icon lucide-chevron-right"
+          >
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </div>
+        <div class="cards-container scroll-x">
+          <div class="card">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.jSNJmQcY_C1wr7NQvqw6mwHaEL?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Delhi</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.Oy4ocOV8j3nJwZ3Kxi9uvwHaE7?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Delhi</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.zzjeSsd7ixqfAeWJDUAw5wHaEJ?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Delhi</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.tJ9Fs4i-tpWqMgnIqrKHTQHaE7?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Delhi</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.anjIiToUiq7bDKVdWvbaYwHaFs?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Delhi</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse2.mm.bing.net/th/id/OIP.fuhp8KCgTBoDCF8kJZzO6wHaE8?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Delhi</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.Oy4ocOV8j3nJwZ3Kxi9uvwHaE7?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Delhi</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.S72dS4eJZy8c14iVGHxzbwHaEK?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Delhi</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse2.mm.bing.net/th/id/OIP.7lDi-iieoPyOdHIvhvXRewHaE_?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Delhi</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.S72dS4eJZy8c14iVGHxzbwHaEK?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Delhi</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+        </div>
+      </div>
+      <!-- Available next month in bangluru -->
+      <div class="lucknow">
+        <div class="ca">
+          Available next month in Bangluru<svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-chevron-right-icon lucide-chevron-right"
+          >
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </div>
+        <div class="cards-container scroll-x">
+          <div class="card">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.tBHP3NW44V6MJL_Ztn7IwQHaEo?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Bangluru</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.fHkMuimWpXELYO9GcTABKAHaEJ?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Bangluru</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.73_Ssa9RiDU3DLfSy57BJAHaE7?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Bangluru</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.3qF--5cs4zqKvAkD2qZc_AHaE8?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Bangluru</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse3.mm.bing.net/th/id/OIP.yIhn_OFCKt72Zc_Lzq71OAHaE6?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Bangluru</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse2.mm.bing.net/th/id/OIP.hpkSj-fCV2EdJQFvFENR0gHaEo?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Bangluru</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse2.mm.bing.net/th/id/OIP.fzQc-1OwdNwbHltVC6MjQwHaEJ?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Bangluru</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.8eFmGfyj6ye9F41EH5PjDAHaE6?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Bangluru</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.TTb_6UMIKeaGf4TDDOz7dAHaE8?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Bangluru</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse2.mm.bing.net/th/id/OIP.TYGWrQovXovoPUaukTV0PQHaEK?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Bangluru</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+        </div>
+      </div>
+      <!-- Homes in pune -->
+      <div class="lucknow">
+        <div class="ca">
+          Homes in Pune<svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-chevron-right-icon lucide-chevron-right"
+          >
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </div>
+        <div class="cards-container scroll-x">
+          <div class="card">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.TTb_6UMIKeaGf4TDDOz7dAHaE8?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Pune</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse3.mm.bing.net/th/id/OIP.kolxcl3tJkCgT9J7SyERdwHaE7?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Pune</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse2.mm.bing.net/th/id/OIP.TYGWrQovXovoPUaukTV0PQHaEK?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Pune</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse2.mm.bing.net/th/id/OIP.ZOh7PIxm4Ls9k_i23BC9ggHaEo?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Pune</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.zEz5Nq_DlOhpFBPH-n5EcwHaE6?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Pune</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.TGXsL-aId96gdTAu2vn2wAHaEo?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Pune</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.4l0TmpShQ03tJOsjYcLjlQHaEo?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Pune</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse3.mm.bing.net/th/id/OIP.7RltEga3FskyYBItaErJUQHaE8?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Pune</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse3.mm.bing.net/th/id/OIP.ShEXfWFtQTjF6P2KhN2PQQHaEo?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Pune</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://tse3.mm.bing.net/th/id/OIP.gkbu_3onf3vpOHdH-kGZswHaEo?pid=Api&P=0&h=180"
+              alt="img1"
+            />
+            <p class="title">Apartement in Pune</p>
+            <p class="price">₹2,739 for 2 nights ★ 4.3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="airbnb-footer">
+      <h1 class="head">Inspiration for future getaways</h1>
+      <h3 class="tail">Unique stays</h3>
+      <hr />
+      <div class="items-container">
+        <div class="item-container">
+          <div class="items">
+            <p class="item-bold">Cabins</p>
+            <p>United State</p>
+          </div>
+          <div class="items">
+            <p class="item-bold">Yurt Rentels</p>
+            <p>United State</p>
+          </div>
+          <div class="items">
+            <p class="item-bold">Farm-cuttage</p>
+            <p>United State</p>
+          </div>
+        </div>
+        <div>
+          <div class="items">
+            <p class="item-bold">TreeHouses</p>
+            <p>United State</p>
+          </div>
+          <div class="items">
+            <p class="item-bold">Castel Rentels</p>
+            <p>United State</p>
+          </div>
+          <div class="items">
+            <p class="item-bold">cabin Rentels</p>
+            <p>United State</p>
+          </div>
+        </div>
+        <div>
+          <div class="items">
+            <p class="item-bold">Tiny Houses</p>
+            <p>United State</p>
+          </div>
+          <div class="items">
+            <p class="item-bold">House Boat</p>
+            <p>United State</p>
+          </div>
+          <div class="items">
+            <p class="item-bold">Luxery Houses</p>
+            <p>United State</p>
+          </div>
+        </div>
+        <div>
+          <div class="items">
+            <p class="item-bold">Beach</p>
+            <p>United State</p>
+          </div>
+          <div class="items">
+            <p class="item-bold">Cabin</p>
+            <p>United State</p>
+          </div>
+          <div class="items">
+            <p class="item-bold">Luxery Cabins</p>
+            <p>United State</p>
+          </div>
+        </div>
+        <div>
+          <div class="items">
+            <p class="item-bold">lake-house</p>
+            <p>United State</p>
+          </div>
+          <div class="items">
+            <p class="item-bold">Private island</p>
+            <p>United State</p>
+          </div>
+          <div class="items">
+            <p class="item-bold">Holiday cabin</p>
+            <p>United State</p>
+          </div>
+        </div>
+        <div>
+          <div class="items">
+            <p class="item-bold">Yurt Rentels</p>
+            <p>United State</p>
+          </div>
+          <div class="items">
+            <p class="item-bold">Farm Houses</p>
+            <p>United State</p>
+          </div>
+          <div class="items">
+            <p class="item-bold">Show more...</p>
+            <p>United State</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-grid">
+        <!-- Column 1: Support -->
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">AirCover</a></li>
+            <li><a href="#">Anti-discrimination</a></li>
+            <li><a href="#">Disability support</a></li>
+            <li><a href="#">Cancellation options</a></li>
+            <li><a href="#">Report neighbourhood concern</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Hosting -->
+        <div class="footer-column">
+          <h4>Hosting</h4>
+          <ul>
+            <li><a href="#">Airbnb your home</a></li>
+            <li><a href="#">Airbnb your experience</a></li>
+            <li><a href="#">Airbnb your service</a></li>
+            <li><a href="#">AirCover for Hosts</a></li>
+            <li><a href="#">Hosting resources</a></li>
+            <li><a href="#">Community forum</a></li>
+            <li><a href="#">Hosting responsibly</a></li>
+            <li><a href="#">Join a free Hosting class</a></li>
+            <li><a href="#">Find a co‑host</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Airbnb -->
+        <div class="footer-column">
+          <h4>Airbnb</h4>
+          <ul>
+            <li><a href="#">2025 Summer Release</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Airbnb.org emergency stays</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-left">
+          <p>© 2025 Airbnb, Inc.</p>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Sitemap</a>
+          <a href="#">Company details</a>
+        </div>
+        <div class="footer-right">
+          <span>🌐 English (IN)</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
